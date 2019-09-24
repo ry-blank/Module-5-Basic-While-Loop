@@ -1,3 +1,16 @@
+"""
+Program: basic_while_loop_assignment
+Author: Ryan Blankenship
+Last date modified: 09/22/2019
+
+The purpose of this program is to prompt
+the user for their name and test scores.
+Once they have completed entering their
+scores and the user is done, it will
+print their name and average score.
+"""
+
+
 def average(score_list):
     total_of_scores = 0
     items_in_list = len(score_list)
@@ -25,3 +38,6 @@ if __name__ == '__main__':
                 num_list.append(scores)
     score = average(num_list)
     print(last_name + ', ' + first_name + ' ' 'grade:' '% 5.2f' % score)
+
+    # At first, I forgot the except ValueError, which caused some issues.
+    # Spacing in print and what python expects to get correct spaces.
